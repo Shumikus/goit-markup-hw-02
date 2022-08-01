@@ -1,4 +1,111 @@
-/* Количество цветов записать в переменные */
-/* покдлючить шрифты от гугла */
-/* создать классы с логичными названиями */
-/*  */
+/* +основной цвет текста #757575;*/
+/* +Цвет заголовков и навигации #212121;*/
+/* Цвет honor в навигации #2196F3 */
+/* Цвет лого header #2196F3 > #000000 */
+/* Цвет лого footer #2196F3 > #FFFFFF */
+/* Цвет BG header #FFFFFF */
+/* Цвет BG footer and hero #2F303A */
+/* Цвет BG наша команада #F5F4FA */
+/* button (BG #2196F3 ) > (color #FFFFFF) */
+/* Цвет адреса  rgba(255, 255, 255, 0.6); */
+/* Hero  color #FFFFFF */
+
+/* current - подсвечивает текущую страницу */
+
+:root {
+  --main-color-text: #757575;
+  --title-text-color: #212121;
+  --hero-color: #ffffff;
+  --first-logo-color: #2196f3;
+  --second-logo-color: #000000;
+  --button-background: #2196f3;
+  --hero-bg-color: #2f303a;
+  --bg-header: #ffffff;
+  --bg-footer-hero: #2f3040;
+  --nav-honor-color: #2196f3;
+}
+
+body {
+  color: var(--main-color-text);
+  font-family: 'Roboto', sans-serif;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--title-text-color);
+}
+
+.list {
+  list-style: none;
+}
+
+/* logo header */
+header {
+  background-color: var(--bg-header);
+}
+
+.logo .logo-header,
+.logo .logo-footer {
+  font-family: 'Raleway', sans-serif;
+  color: var(--first-logo-color);
+  text-decoration: none;
+}
+
+.logo-header > span {
+  color: var(--second-logo-color);
+}
+
+.logo-footer > span {
+  color: var(--hero-color);
+}
+
+/* navigation */
+.nav .link:hover,
+.nav-list .link:hover,
+.nav .link:focus,
+.nav-list .link:focus,
+.list.link.current {
+  color: var(--nav-honor-color);
+}
+
+/* .nav .link.current {
+  color: var(--nav-honor-color);
+} */
+
+/* .nav .link.current{
+
+} */
+/* hero */
+.hero {
+  background-color: var(--bg-footer-hero);
+}
+.hero .title {
+  color: var(--hero-color);
+  text-align: center;
+}
+
+/* button */
+
+.button {
+  background-color: var(--button-background);
+  color: var(--hero-color);
+}
+
+/* section */
+.title {
+  color: var(--title-text-color);
+}
+
+/* footer */
+
+footer {
+  background-color: var(--bg-footer-hero);
+}
+
+.address > p {
+  color: var(--hero-color);
+}
+
+.address .link {
+  color: rgba(255, 255, 255, 0.6);
+}
