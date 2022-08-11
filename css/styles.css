@@ -57,7 +57,7 @@ footer {
 .logo-header,
 .logo-footer {
   font-family: 'Raleway', sans-serif;
-  font-style: normal;
+  /* font-style: normal; */
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -135,7 +135,6 @@ footer {
 /* Benefits section */
 
 .section-benefits .title {
-  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
@@ -144,7 +143,6 @@ footer {
 /* About section */
 
 .section-about .title {
-  font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
@@ -153,7 +151,6 @@ footer {
 /* section-team */
 
 .section-team .section-title {
-  font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
@@ -199,12 +196,20 @@ footer {
 /* Portfolio  */
 
 .title-none {
-  display: none;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 
 .button-filter {
   font-family: inherit;
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -223,7 +228,6 @@ footer {
 }
 
 .filter-title {
-  font-style: normal;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
@@ -231,7 +235,6 @@ footer {
 }
 
 .list p {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
   color: var(--main-color-text);
