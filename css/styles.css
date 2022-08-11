@@ -57,7 +57,7 @@ footer {
 .logo-header,
 .logo-footer {
   font-family: 'Raleway', sans-serif;
-  /* font-style: normal; */
+  font-style: normal;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -162,7 +162,6 @@ footer {
 }
 
 .section-team p {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.19px;
 }
@@ -179,7 +178,6 @@ footer {
 
 .address-link,
 .maps-link {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   font-style: normal;
